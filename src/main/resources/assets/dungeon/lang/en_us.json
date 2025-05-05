@@ -1,0 +1,27 @@
+{
+
+
+  "item.dungeon.weapon_core_unknown": "Weapon Core (Unpowered)",
+  "item.dungeon.weapon_core_common": "Weapon Core (Powered)",
+  "item.dungeon.weapon_core_uncommon": "Weapon Core (Powered)",
+  "item.dungeon.weapon_core_rare": "Weapon Core (Powered)",
+  "item.dungeon.weapon_core_epic": "Weapon Core (Powered)",
+  "item.dungeon.weapon_core_legendary": "Weapon Core (Powered)",
+  "item.dungeon.weapon_core_mythical": "Weapon Core (Powered)",
+
+  "reward.common": "%s rolled a §7Common",
+  "reward.uncommon": "%s rolled a §2Uncommon",
+  "reward.rare": "%s rolled a §1Rare",
+  "reward.epic": "%s rolled a §5Epic",
+  "reward.legendary": "%s rolled a §6Legendary",
+  "reward.mythical": "%s rolled a §dMythical",
+
+  "tooltip.rarity.common": "Power Level: §7Common",
+  "tooltip.rarity.uncommon": "Power Level: §2Uncommon",
+  "tooltip.rarity.rare": "Power Level: §1Rare",
+  "tooltip.rarity.epic": "Power Level: §5Epic",
+  "tooltip.rarity.legendary": "Power Level: §6Legendary",
+  "tooltip.rarity.mythical": "Power Level: §dMythical",
+
+  "tooltip.power_item": "\"§o§eRight-Click§r\" to power Item"
+}
