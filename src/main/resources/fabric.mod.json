@@ -2,16 +2,24 @@
 	"schemaVersion": 1,
 	"id": "dungeon",
 	"version": "${version}",
-	"name": "Dungeon Runner",
+	"name": "Dungeon Runners",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		{
+			"name": "Mythic Studios (Organisation)",
+			"contact": {
+				"email": "mythicalstudios2011@gmail.com",
+				"website": "mythic-studios.github.io"
+			}
+		},
+		{
+			"name": "Myth (Lead-Developer)",
+			"contact": {
+				"issues": "https://github.com/MarsMyth/IssueTracker/issues"
+			}
+		}
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
+	"license": "Mythics Law V3",
 	"icon": "assets/dungeon/icon.png",
 	"environment": "*",
 	"entrypoints": {
