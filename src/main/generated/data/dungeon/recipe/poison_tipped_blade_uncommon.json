@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "dungeon:weapon_core_uncommon"
+    },
+    "m": {
+      "item": "dungeon:poison_tipped_blade_mold"
+    }
+  },
+  "pattern": [
+    "mc"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dungeon:poison_tipped_blade_uncommon"
+  }
+}

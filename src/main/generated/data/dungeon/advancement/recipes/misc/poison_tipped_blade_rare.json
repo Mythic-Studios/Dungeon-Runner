@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_poison_tipped_blade_mold": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dungeon:poison_tipped_blade_mold"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dungeon:poison_tipped_blade_rare"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_weapon_core_rare": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dungeon:weapon_core_rare"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_weapon_core_rare",
+      "has_poison_tipped_blade_mold"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dungeon:poison_tipped_blade_rare"
+    ]
+  }
+}

@@ -18,24 +18,31 @@ public class WeaponCoreItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
 
-        if (rarity.equals("Common")){
-            tooltip.add(Text.literal(" "));
-            tooltip.add(Text.translatable("tooltip.rarity.common"));
-        } else if (rarity.equals("Uncommon")){
-            tooltip.add(Text.literal(" "));
-            tooltip.add(Text.translatable("tooltip.rarity.uncommon"));
-        } else if (rarity.equals("Rare")){
-            tooltip.add(Text.literal(" "));
-            tooltip.add(Text.translatable("tooltip.rarity.rare"));
-        } else if (rarity.equals("Epic")){
-            tooltip.add(Text.literal(" "));
-            tooltip.add(Text.translatable("tooltip.rarity.epic"));
-        } else if (rarity.equals("Legendary")){
-            tooltip.add(Text.literal(" "));
-            tooltip.add(Text.translatable("tooltip.rarity.legendary"));
-        } else if (rarity.equals("Mythical")){
-            tooltip.add(Text.literal(" "));
-            tooltip.add(Text.translatable("tooltip.rarity.mythical"));
+        switch (rarity) {
+            case "Common" -> {
+                tooltip.add(Text.literal(" "));
+                tooltip.add(Text.translatable("tooltip.rarity.common"));
+            }
+            case "Uncommon" -> {
+                tooltip.add(Text.literal(" "));
+                tooltip.add(Text.translatable("tooltip.rarity.uncommon"));
+            }
+            case "Rare" -> {
+                tooltip.add(Text.literal(" "));
+                tooltip.add(Text.translatable("tooltip.rarity.rare"));
+            }
+            case "Epic" -> {
+                tooltip.add(Text.literal(" "));
+                tooltip.add(Text.translatable("tooltip.rarity.epic"));
+            }
+            case "Legendary" -> {
+                tooltip.add(Text.literal(" "));
+                tooltip.add(Text.translatable("tooltip.rarity.legendary"));
+            }
+            case "Mythical" -> {
+                tooltip.add(Text.literal(" "));
+                tooltip.add(Text.translatable("tooltip.rarity.mythical"));
+            }
         }
 
         super.appendTooltip(stack, context, tooltip, type);

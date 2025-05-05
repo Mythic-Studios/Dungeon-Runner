@@ -13,7 +13,7 @@ import java.util.function.Supplier;
 public enum ModToolMaterials implements ToolMaterial {
 
     BLADE(BlockTags.INCORRECT_FOR_IRON_TOOL,
-            0, 5.0F, 4.0F, 0, () -> Ingredient.ofItems(Items.DIRT))
+            1000000000, 5.0F, 4.0F, 0, () -> Ingredient.ofItems(Items.DIRT))
 
     ;
 

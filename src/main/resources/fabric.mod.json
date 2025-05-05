@@ -21,6 +21,9 @@
 		"client": [
 			"org.mythic_studios.dungeon.DungeonRunnerClient"
 		],
+		"modmenu": [
+			"org.mythic_studios.dungeon.config.ModMenuIntegration"
+		],
 		"fabric-datagen": [
 			"org.mythic_studios.dungeon.DungeonRunnerDataGenerator"
 		]

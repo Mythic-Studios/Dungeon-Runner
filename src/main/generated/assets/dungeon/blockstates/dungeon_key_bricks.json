@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "dungeon:block/dungeon_key_bricks"
+    }
+  }
+}

@@ -1,5 +1,16 @@
 {
 
+  "block.dungeon.dungeon_block": "Dungeon Block",
+  "block.dungeon.dungeon_key_block": "Dungeon Block (Key Hole)",
+
+  "item.dungeon.poison_tipped_blade_mold": "Mold (Poison Tipped Blade)",
+  "item.dungeon.poison_tipped_blade_common": "Poison Tipped Blade (§7Common§r)",
+  "item.dungeon.poison_tipped_blade_uncommon": "Poison Tipped Blade (§2Uncommon§r)",
+  "item.dungeon.poison_tipped_blade_rare": "Poison Tipped Blade (§1Rare§r)",
+  "item.dungeon.poison_tipped_blade_epic": "Poison Tipped Blade (§5Epic§r)",
+  "item.dungeon.poison_tipped_blade_legendary": "Poison Tipped Blade (§6Legendary§r)",
+  "item.dungeon.poison_tipped_blade_mythical": "Poison Tipped Blade (§dMythical§r)",
+
 
   "item.dungeon.weapon_core_unknown": "Weapon Core (Unpowered)",
   "item.dungeon.weapon_core_common": "Weapon Core (Powered)",
@@ -23,5 +34,28 @@
   "tooltip.rarity.legendary": "Power Level: §6Legendary",
   "tooltip.rarity.mythical": "Power Level: §dMythical",
 
-  "tooltip.power_item": "\"§o§eRight-Click§r\" to power Item"
+  "tooltip.power_item": "\"§o§eRight-Click§r\" to power Item",
+
+  "tooltip.poison_ability.1": "\"§o§eRight-Click§r\" §6to activate a 10 Block burst of Poison that",
+  "tooltip.poison_ability.2": "§6lasts a duration amount of time that WILL go on a cooldown",
+
+  "tooltip.duration.20": "Effect Duration: 1 sec",
+  "tooltip.duration.40": "Effect Duration: 2 secs",
+  "tooltip.duration.60": "Effect Duration: 3 sec",
+  "tooltip.duration.80": "Effect Duration: 4 secs",
+  "tooltip.duration.100": "Effect Duration: 5 sec",
+  "tooltip.duration.140": "Effect Duration: 7 secs",
+
+  "tooltip.cooldown.20": "Ability Cooldown: 1 sec",
+  "tooltip.cooldown.40": "Ability Cooldown: 2 secs",
+  "tooltip.cooldown.60": "Ability Cooldown: 3 sec",
+  "tooltip.cooldown.120": "Ability Cooldown: 7 secs",
+  "tooltip.cooldown.80": "Ability Cooldown: 4 sec",
+  "tooltip.cooldown.160": "Ability Cooldown: 9 secs",
+
+  "text.autoconfig.dungeon.title": "Dungeon Runner Config",
+  "text.autoconfig.dungeon.category.general_settings": "General",
+  "text.autoconfig.dungeon.option.showDebug": "Show Debug Text",
+  "text.autoconfig.dungeon.option.showDebug.@Tooltip[0]": "Shows the Debug messages of the Mod (NOT Recommended)",
+  "text.autoconfig.dungeon.option.showDebug.@Tooltip[1]": "Default: No"
 }

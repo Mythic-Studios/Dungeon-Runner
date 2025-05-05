@@ -1,12 +1,15 @@
 package org.mythic_studios.dungeon.init;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.mythic_studios.dungeon.DungeonRunner;
+import org.mythic_studios.dungeon.item.DungeonKeyItem;
 import org.mythic_studios.dungeon.item.UnpoweredWeaponCoreItem;
 import org.mythic_studios.dungeon.item.WeaponCoreItem;
+import org.mythic_studios.dungeon.utill.ModTags;
 
 public class ModItems {
 
@@ -17,6 +20,8 @@ public class ModItems {
     public static Item WEAPON_CORE_EPIC;
     public static Item WEAPON_CORE_LEGENDARY;
     public static Item WEAPON_CORE_MYTHICAL;
+
+    public static Item DUNGEON_KEY;
 
     public static void init() {
 
@@ -29,6 +34,7 @@ public class ModItems {
         WEAPON_CORE_LEGENDARY = createItem("weapon_core_legendary", new WeaponCoreItem(new Item.Settings(), "Legendary"));
         WEAPON_CORE_MYTHICAL = createItem("weapon_core_mythical", new WeaponCoreItem(new Item.Settings(), "Mythical"));
 
+        DUNGEON_KEY = createItem("dungeon_key", new DungeonKeyItem(new Item.Settings(), ModBlocks.DUNGEON_KEY_BRICKS, ModBlocks.DUNGEON_BRICKS));
     }
 
 

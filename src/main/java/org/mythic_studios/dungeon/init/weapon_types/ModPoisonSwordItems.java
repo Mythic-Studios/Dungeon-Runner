@@ -1,4 +1,4 @@
-package org.mythic_studios.dungeon.init;
+package org.mythic_studios.dungeon.init.weapon_types;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
@@ -25,32 +25,34 @@ public class ModPoisonSwordItems {
         POISON_TIPPED_BLADE_COMMON = createItem("poison_tipped_blade_common",
                 new PoisonSwordItem(ModToolMaterials.BLADE,
                         new Item.Settings().maxCount(1).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.BLADE, 2,
-                                -3.4f)),"Common"));
+                                -3.4f)),"Common", 20, 20));
 
         POISON_TIPPED_BLADE_UNCOMMON = createItem("poison_tipped_blade_uncommon",
                 new PoisonSwordItem(ModToolMaterials.BLADE,
                         new Item.Settings().maxCount(1).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.BLADE, 3,
-                                -3.4f)),"Uncommon"));
+                                -3.4f)),"Uncommon", 40, 40));
 
         POISON_TIPPED_BLADE_RARE = createItem("poison_tipped_blade_rare",
                 new PoisonSwordItem(ModToolMaterials.BLADE,
                         new Item.Settings().maxCount(1).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.BLADE, 4,
-                                -2.4f)),"Rare"));
+                                -2.4f)),"Rare", 60, 60));
 
         POISON_TIPPED_BLADE_EPIC = createItem("poison_tipped_blade_epic",
                 new PoisonSwordItem(ModToolMaterials.BLADE,
                         new Item.Settings().maxCount(1).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.BLADE, 5,
-                                -2.4f)),"Epic"));
+                                -2.4f)),"Epic", 80, 120));
 
         POISON_TIPPED_BLADE_LEGENDARY = createItem("poison_tipped_blade_legendary",
                 new PoisonSwordItem(ModToolMaterials.BLADE,
-                        new Item.Settings().maxCount(1).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.BLADE, 5,
-                                -1.4f)),"Legendary"));
+                        new Item.Settings().maxCount(1).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.BLADE, 6,
+                                -1.4f)),"Legendary", 100, 80));
 
         POISON_TIPPED_BLADE_MYTHICAL = createItem("poison_tipped_blade_mythical",
                 new PoisonSwordItem(ModToolMaterials.BLADE,
-                        new Item.Settings().maxCount(1).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.BLADE, 7,
-                                -1.0f)),"Mythical"));
+                        new Item.Settings().maxCount(1).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.BLADE, 8,
+                                -1.0f)),"Mythical", 140, 160));
+
+        POISON_TIPPED_BLADE_MOLD = createItem("poison_tipped_blade_mold", new Item(new Item.Settings()));
     }
 
 
