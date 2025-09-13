@@ -73,6 +73,10 @@
   "text.autoconfig.dungeon.option.showDebug.@Tooltip[0]": "Shows the Debug messages of the Mod (NOT Recommended)",
   "text.autoconfig.dungeon.option.showDebug.@Tooltip[1]": "Default: No",
 
+  "text.autoconfig.dungeon.option.showBarsInCreative": "Show Bars in Creative",
+  "text.autoconfig.dungeon.option.showBarsInCreative.@Tooltip[0]": "Shows the custom health bar, xp bar, dash bar while in Creative Mode",
+  "text.autoconfig.dungeon.option.showBarsInCreative.@Tooltip[1]": "Default: No",
+
   "text.autoconfig.dungeon.category.gui_settings": "Gui Settings",
   "text.autoconfig.dungeon.option.isLifesOnLeft": "Is Lifes on the Left Side of the Screen?",
   "text.autoconfig.dungeon.option.isLifesOnLeft.@Tooltip[0]": "Make sure to move the Quest List to the right if you are doing this",
