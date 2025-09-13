@@ -16,14 +16,20 @@ public class ModModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DUNGEON_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DUNGEON_KEY_BRICKS);
-
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SECRET_DUNGEON_KEY_BRICKS);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.DUNGEON_KEY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SECRET_DUNGEON_KEY, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.BLADE_MOLD, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.CRYSTAL_POISON, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRYSTAL_FREEZING, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.WEAPON_CORE_UNKNOWN, Models.GENERATED);
         itemModelGenerator.register(ModItems.WEAPON_CORE_COMMON, Models.GENERATED);
@@ -32,13 +38,5 @@ public class ModModelGenerator extends FabricModelProvider {
         itemModelGenerator.register(ModItems.WEAPON_CORE_EPIC, Models.GENERATED);
         itemModelGenerator.register(ModItems.WEAPON_CORE_LEGENDARY, Models.GENERATED);
         itemModelGenerator.register(ModItems.WEAPON_CORE_MYTHICAL, Models.GENERATED);
-
-        itemModelGenerator.register(ModPoisonSwordItems.POISON_TIPPED_BLADE_MOLD, Models.GENERATED);
-        itemModelGenerator.register(ModPoisonSwordItems.POISON_TIPPED_BLADE_COMMON, Models.HANDHELD);
-        itemModelGenerator.register(ModPoisonSwordItems.POISON_TIPPED_BLADE_UNCOMMON, Models.HANDHELD);
-        itemModelGenerator.register(ModPoisonSwordItems.POISON_TIPPED_BLADE_RARE, Models.HANDHELD);
-        itemModelGenerator.register(ModPoisonSwordItems.POISON_TIPPED_BLADE_EPIC, Models.HANDHELD);
-        itemModelGenerator.register(ModPoisonSwordItems.POISON_TIPPED_BLADE_LEGENDARY, Models.HANDHELD);
-        itemModelGenerator.register(ModPoisonSwordItems.POISON_TIPPED_BLADE_MYTHICAL, Models.HANDHELD);
     }
 }

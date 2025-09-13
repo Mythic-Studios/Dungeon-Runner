@@ -11,4 +11,13 @@ public class DungeonConfig implements ConfigData {
     @ConfigEntry.Category("general_settings")
     @ConfigEntry.Gui.Tooltip(count = 2)
     public static boolean showDebug = false;
+
+
+    @ConfigEntry.Category("gui_settings")
+    @ConfigEntry.Gui.Tooltip(count = 2)
+    public static boolean isLifesOnLeft = false;
+
+    @ConfigEntry.Category("gui_settings")
+    @ConfigEntry.Gui.Tooltip(count = 2)
+    public static boolean isQuestsOnRight = false;
 }

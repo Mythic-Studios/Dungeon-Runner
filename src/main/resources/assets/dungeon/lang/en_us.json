@@ -1,31 +1,43 @@
 {
 
-  "block.dungeon.dungeon_block": "Dungeon Block",
-  "block.dungeon.dungeon_key_block": "Dungeon Block (Key Hole)",
+  "block.dungeon.dungeon_bricks": "Dungeon Bricks",
+  "block.dungeon.dungeon_key_bricks": "Dungeon Bricks (Key Hole)",
+  "block.dungeon.secret_dungeon_key_bricks": "Dungeon Bricks (Special Key Hole)",
+  "block.dungeon.weapon_forge": "Weapon Forge",
 
-  "item.dungeon.poison_tipped_blade_mold": "Mold (Poison Tipped Blade)",
-  "item.dungeon.poison_tipped_blade_common": "Poison Tipped Blade (§7Common§r)",
-  "item.dungeon.poison_tipped_blade_uncommon": "Poison Tipped Blade (§2Uncommon§r)",
-  "item.dungeon.poison_tipped_blade_rare": "Poison Tipped Blade (§1Rare§r)",
-  "item.dungeon.poison_tipped_blade_epic": "Poison Tipped Blade (§5Epic§r)",
-  "item.dungeon.poison_tipped_blade_legendary": "Poison Tipped Blade (§6Legendary§r)",
-  "item.dungeon.poison_tipped_blade_mythical": "Poison Tipped Blade (§dMythical§r)",
+  "gui.dungeon.weapon_forge": "Weapon Forge",
+
+  "item.dungeon.dungeon_key": "Dungeon Key",
+  "item.dungeon.secret_dungeon_key": "Special Dungeon Key",
+  "item.dungeon.blade_mold": "Weapon Mold (Blade)",
+
+  "item.dungeon.crystals.poisoned_crystal": "Charged Crystal (Poisoning)",
+  "item.dungeon.crystals.frozen_crystal": "Charged Crystal (Freezing)",
+  "item.dungeon.crystals.sun_crystal": "Charged Crystal (Burning)",
+  "item.dungeon.crystals.blood_crystal": "Charged Crystal (Bleeding)",
 
 
-  "item.dungeon.weapon_core_unknown": "Weapon Core (Unpowered)",
-  "item.dungeon.weapon_core_common": "Weapon Core (Powered)",
-  "item.dungeon.weapon_core_uncommon": "Weapon Core (Powered)",
-  "item.dungeon.weapon_core_rare": "Weapon Core (Powered)",
-  "item.dungeon.weapon_core_epic": "Weapon Core (Powered)",
-  "item.dungeon.weapon_core_legendary": "Weapon Core (Powered)",
-  "item.dungeon.weapon_core_mythical": "Weapon Core (Powered)",
+  "item.dungeon.poison_tipped.poison_tipped_blade_common": "Poison Tipped Blade (§7Common§r)",
+  "item.dungeon.poison_tipped.poison_tipped_blade_uncommon": "Poison Tipped Blade (§2Uncommon§r)",
+  "item.dungeon.poison_tipped.poison_tipped_blade_rare": "Poison Tipped Blade (§1Rare§r)",
+  "item.dungeon.poison_tipped.poison_tipped_blade_epic": "Poison Tipped Blade (§5Epic§r)",
+  "item.dungeon.poison_tipped.poison_tipped_blade_legendary": "Poison Tipped Blade (§6Legendary§r)",
+  "item.dungeon.poison_tipped.poison_tipped_blade_mythical": "Poison Tipped Blade (§dMythical§r)",
 
-  "reward.common": "%s rolled a §7Common",
-  "reward.uncommon": "%s rolled a §2Uncommon",
-  "reward.rare": "%s rolled a §1Rare",
-  "reward.epic": "%s rolled a §5Epic",
-  "reward.legendary": "%s rolled a §6Legendary",
-  "reward.mythical": "%s rolled a §dMythical",
+  "item.dungeon.weapon_core.weapon_core_unknown": "Weapon Core (Unpowered)",
+  "item.dungeon.weapon_core.weapon_core_common": "Weapon Core (Powered)",
+  "item.dungeon.weapon_core.weapon_core_uncommon": "Weapon Core (Powered)",
+  "item.dungeon.weapon_core.weapon_core_rare": "Weapon Core (Powered)",
+  "item.dungeon.weapon_core.weapon_core_epic": "Weapon Core (Powered)",
+  "item.dungeon.weapon_core.weapon_core_legendary": "Weapon Core (Powered)",
+  "item.dungeon.weapon_core.weapon_core_mythical": "Weapon Core (Powered)",
+
+  "reward.common": "You rolled a §7Common",
+  "reward.uncommon": "You rolled a §2Uncommon",
+  "reward.rare": "You rolled a §1Rare",
+  "reward.epic": "You rolled a §5Epic",
+  "reward.legendary": "You rolled a §6Legendary",
+  "reward.mythical": "You rolled a §dMythical",
 
   "tooltip.rarity.common": "Power Level: §7Common",
   "tooltip.rarity.uncommon": "Power Level: §2Uncommon",
@@ -35,6 +47,7 @@
   "tooltip.rarity.mythical": "Power Level: §dMythical",
 
   "tooltip.power_item": "\"§o§eRight-Click§r\" to power Item",
+  "tooltip.shift.ability": "Hold \"§o§eShift§r\" to see Weapon Stats",
 
   "tooltip.poison_ability.1": "\"§o§eRight-Click§r\" §6to activate a 10 Block burst of Poison that",
   "tooltip.poison_ability.2": "§6lasts a duration amount of time that WILL go on a cooldown",
@@ -49,13 +62,19 @@
   "tooltip.cooldown.20": "Ability Cooldown: 1 sec",
   "tooltip.cooldown.40": "Ability Cooldown: 2 secs",
   "tooltip.cooldown.60": "Ability Cooldown: 3 sec",
+  "tooltip.cooldown.100": "Ability Cooldown: 6 secs",
   "tooltip.cooldown.120": "Ability Cooldown: 7 secs",
   "tooltip.cooldown.80": "Ability Cooldown: 4 sec",
   "tooltip.cooldown.160": "Ability Cooldown: 9 secs",
 
   "text.autoconfig.dungeon.title": "Dungeon Runner Config",
-  "text.autoconfig.dungeon.category.general_settings": "General",
+  "text.autoconfig.dungeon.category.general_settings": "General Settings",
   "text.autoconfig.dungeon.option.showDebug": "Show Debug Text",
   "text.autoconfig.dungeon.option.showDebug.@Tooltip[0]": "Shows the Debug messages of the Mod (NOT Recommended)",
-  "text.autoconfig.dungeon.option.showDebug.@Tooltip[1]": "Default: No"
+  "text.autoconfig.dungeon.option.showDebug.@Tooltip[1]": "Default: No",
+
+  "text.autoconfig.dungeon.category.gui_settings": "Gui Settings",
+  "text.autoconfig.dungeon.option.isLifesOnLeft": "Is Lifes on the Left Side of the Screen?",
+  "text.autoconfig.dungeon.option.isLifesOnLeft.@Tooltip[0]": "Make sure to move the Quest List to the right if you are doing this",
+  "text.autoconfig.dungeon.option.isLifesOnLeft.@Tooltip[1]": "Default: No"
 }

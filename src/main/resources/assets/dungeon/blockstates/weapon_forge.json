@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "lit=false,facing=north": { "model": "dungeon:block/weapon_forge", "y": 180 },
+    "lit=false,facing=south": { "model": "dungeon:block/weapon_forge" },
+    "lit=false,facing=west":  { "model": "dungeon:block/weapon_forge", "y": 90 },
+    "lit=false,facing=east":  { "model": "dungeon:block/weapon_forge", "y": 270 },
+
+    "lit=true,facing=north":  { "model": "dungeon:block/weapon_forge_on", "y": 180 },
+    "lit=true,facing=south":  { "model": "dungeon:block/weapon_forge_on" },
+    "lit=true,facing=west":   { "model": "dungeon:block/weapon_forge_on", "y": 90 },
+    "lit=true,facing=east":   { "model": "dungeon:block/weapon_forge_on", "y": 270 }
+  }
+}

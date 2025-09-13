@@ -34,6 +34,7 @@ public class DungeonKeyItem extends Item {
         World world = context.getWorld();
         BlockPos clickedPos = context.getBlockPos();
         PlayerEntity player = context.getPlayer();
+        ItemStack stack = context.getStack();
 
         if (!world.isClient() && context.getHand() == Hand.MAIN_HAND) {
             BlockState clickedState = world.getBlockState(clickedPos);
@@ -65,6 +66,8 @@ public class DungeonKeyItem extends Item {
                         }
                     }
                 }
+
+                stack.decrement(1);
 
                 return ActionResult.SUCCESS;
             } else {

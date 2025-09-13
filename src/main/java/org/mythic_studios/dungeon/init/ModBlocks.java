@@ -9,6 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.mythic_studios.dungeon.DungeonRunner;
+import org.mythic_studios.dungeon.block.WeaponForgeBlock;
 
 public class ModBlocks {
 
@@ -17,7 +18,12 @@ public class ModBlocks {
 
     public static final Block DUNGEON_BRICKS = createBlock("dungeon_bricks",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).hardness(32f)));
-    
+
+    public static final Block SECRET_DUNGEON_KEY_BRICKS = createBlock("secret_dungeon_key_bricks",
+            new Block(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).hardness(32f)));
+
+    public static final Block WEAPON_FORGE = createBlock("weapon_forge",
+            new WeaponForgeBlock(AbstractBlock.Settings.copy(Blocks.FURNACE).hardness(32f)));
 
     private static Block createBlock(String name, Block block) {
         registerBlockItem(name, block);

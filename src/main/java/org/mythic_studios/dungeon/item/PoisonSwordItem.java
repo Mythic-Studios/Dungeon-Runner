@@ -1,5 +1,6 @@
 package org.mythic_studios.dungeon.item;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -57,7 +58,7 @@ public class PoisonSwordItem extends SwordItem {
 
                 // Spawn particles around each poisoned entity
                 ((ServerWorld) world).spawnParticles(
-                        ParticleTypes.HAPPY_VILLAGER,
+                        ParticleTypes.EFFECT,
                         entity.getX(), entity.getBodyY(0.5), entity.getZ(),
                         100, // count
                         0.5, 0.5, 0.5, // offset
@@ -78,37 +79,47 @@ public class PoisonSwordItem extends SwordItem {
 
         tooltip.add(Text.literal(" "));
 
-        if (StatusEffectLength == 20) {
-            tooltip.add(Text.translatable("tooltip.duration.20"));
-        } else if (StatusEffectLength == 40) {
-            tooltip.add(Text.translatable("tooltip.duration.40"));
-        } else if (StatusEffectLength == 60) {
-            tooltip.add(Text.translatable("tooltip.duration.60"));
-        } else if (StatusEffectLength == 80) {
-            tooltip.add(Text.translatable("tooltip.duration.80"));
-        } else if (StatusEffectLength == 100) {
-            tooltip.add(Text.translatable("tooltip.duration.100"));
-        } else if (StatusEffectLength == 140) {
-            tooltip.add(Text.translatable("tooltip.duration.140"));
-        }
+        if (Screen.hasShiftDown()) {
+            if (StatusEffectLength == 20) {
+                tooltip.add(Text.translatable("tooltip.duration.20"));
+            } else if (StatusEffectLength == 40) {
+                tooltip.add(Text.translatable("tooltip.duration.40"));
+            } else if (StatusEffectLength == 60) {
+                tooltip.add(Text.translatable("tooltip.duration.60"));
+            } else if (StatusEffectLength == 80) {
+                tooltip.add(Text.translatable("tooltip.duration.80"));
+            } else if (StatusEffectLength == 100) {
+                tooltip.add(Text.translatable("tooltip.duration.100"));
+            } else if (StatusEffectLength == 120) {
+                tooltip.add(Text.translatable("tooltip.duration.120"));
+            } else if (StatusEffectLength == 140) {
+                tooltip.add(Text.translatable("tooltip.duration.140"));
+            }
 
-        if (COOLDOWN_TICKS == 20) {
-            tooltip.add(Text.translatable("tooltip.cooldown.20"));
-        } else if (COOLDOWN_TICKS == 40) {
-            tooltip.add(Text.translatable("tooltip.cooldown.40"));
-        } else if (COOLDOWN_TICKS == 60) {
-            tooltip.add(Text.translatable("tooltip.cooldown.60"));
-        } else if (COOLDOWN_TICKS == 100) {
-            tooltip.add(Text.translatable("tooltip.cooldown.100"));
-        } else if (COOLDOWN_TICKS == 80) {
-            tooltip.add(Text.translatable("tooltip.cooldown.80"));
-        } else if (COOLDOWN_TICKS == 160) {
-            tooltip.add(Text.translatable("tooltip.cooldown.160"));
+            if (COOLDOWN_TICKS == 20) {
+                tooltip.add(Text.translatable("tooltip.cooldown.20"));
+            } else if (COOLDOWN_TICKS == 40) {
+                tooltip.add(Text.translatable("tooltip.cooldown.40"));
+            } else if (COOLDOWN_TICKS == 60) {
+                tooltip.add(Text.translatable("tooltip.cooldown.60"));
+            } else if (COOLDOWN_TICKS == 100) {
+                tooltip.add(Text.translatable("tooltip.cooldown.100"));
+            } else if (COOLDOWN_TICKS == 120) {
+                tooltip.add(Text.translatable("tooltip.cooldown.120"));
+            } else if (COOLDOWN_TICKS == 80) {
+                tooltip.add(Text.translatable("tooltip.cooldown.80"));
+            } else if (COOLDOWN_TICKS == 160) {
+                tooltip.add(Text.translatable("tooltip.cooldown.160"));
+            }
+        }
+        else {
+            tooltip.add(Text.translatable("tooltip.shift.ability"));
         }
 
         tooltip.add(Text.literal(" "));
         tooltip.add(Text.translatable("tooltip.poison_ability.1"));
         tooltip.add(Text.translatable("tooltip.poison_ability.2"));
+
 
         super.appendTooltip(stack, context, tooltip, type);
     }
