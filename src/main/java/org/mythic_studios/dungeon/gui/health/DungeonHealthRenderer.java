@@ -18,7 +18,9 @@ public class DungeonHealthRenderer implements HudRenderCallback {
     public void onHudRender(DrawContext drawContext, RenderTickCounter renderTickCounter) {
         MinecraftClient client = MinecraftClient.getInstance();
         PlayerEntity player = client.player;
-        if (player == null) return;
+        if (player == null || client.options.hudHidden || client.player.isSpectator()) {
+            return;
+        }
         if (player.isCreative() && !DungeonConfig.showBarsInCreative) return;
 
         Window window = client.getWindow();

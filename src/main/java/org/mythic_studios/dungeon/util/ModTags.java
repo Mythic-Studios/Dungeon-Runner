@@ -1,4 +1,4 @@
-package org.mythic_studios.dungeon.utill;
+package org.mythic_studios.dungeon.util;
 
 import net.minecraft.block.Block;
 import net.minecraft.registry.RegistryKeys;
