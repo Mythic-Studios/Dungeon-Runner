@@ -7,7 +7,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.mythic_studios.dungeon.DungeonRunner;
 import org.mythic_studios.dungeon.item.ModToolMaterials;
-import org.mythic_studios.dungeon.item.PoisonSwordItem;
+import org.mythic_studios.dungeon.item.weapon_types.FrostBladeItem;
+import org.mythic_studios.dungeon.item.weapon_types.PoisonSwordItem;
 
 public class ModPoisonSwordItems {
 

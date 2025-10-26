@@ -29,7 +29,7 @@ public class UnpoweredWeaponCoreItem extends Item {
 
         if (!world.isClient()) {
             // Generate a random number from 0 to 99
-            int roll = world.random.nextInt(101);
+            int roll = world.random.nextInt(100);
             Item result = null;
             String rarity = "";
 
@@ -49,7 +49,7 @@ public class UnpoweredWeaponCoreItem extends Item {
             } else if (roll < 99) {
                 result = ModItems.WEAPON_CORE_LEGENDARY; // 2%
                 rarity = "Legendary";
-            } else {
+            } else if (roll == 100) {
                 result = ModItems.WEAPON_CORE_MYTHICAL; // 1%
                 rarity = "Mythical";
             }

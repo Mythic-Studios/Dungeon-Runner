@@ -26,6 +26,7 @@ public class ModItems {
 
     public static Item CRYSTAL_POISON;
     public static Item CRYSTAL_FREEZING;
+    public static Item CRYSTAL_SUN;
 
     public static void init() {
 
@@ -45,6 +46,7 @@ public class ModItems {
 
         CRYSTAL_POISON = createItem("crystals/poisoned_crystal", new Item(new Item.Settings()));
         CRYSTAL_FREEZING = createItem("crystals/frozen_crystal", new Item(new Item.Settings()));
+        CRYSTAL_SUN = createItem("crystals/sun_crystal", new Item(new Item.Settings()));
     }
 
 

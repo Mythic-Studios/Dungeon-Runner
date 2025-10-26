@@ -30,6 +30,7 @@ public class ModModelGenerator extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.CRYSTAL_POISON, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRYSTAL_FREEZING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRYSTAL_SUN, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.WEAPON_CORE_UNKNOWN, Models.GENERATED);
         itemModelGenerator.register(ModItems.WEAPON_CORE_COMMON, Models.GENERATED);

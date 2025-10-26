@@ -23,7 +23,9 @@ public class WeaponForgingScreen extends HandledScreen<WeaponForgingScreenHandle
     // List of crystal outlines to cycle through
     private static final List<Identifier> CRYSTAL_OUTLINES = List.of(
             Identifier.of(DungeonRunner.MOD_ID, "textures/gui/weapon_forge/outlines/poisoned_crystal_outline.png"),
-            Identifier.of(DungeonRunner.MOD_ID, "textures/gui/weapon_forge/outlines/frozen_crystal_outline.png")
+            Identifier.of(DungeonRunner.MOD_ID, "textures/gui/weapon_forge/outlines/frozen_crystal_outline.png"),
+            Identifier.of(DungeonRunner.MOD_ID, "textures/gui/weapon_forge/outlines/sun_crystal_outline.png")
+
             // Add more later
     );
 
@@ -66,8 +68,8 @@ public class WeaponForgingScreen extends HandledScreen<WeaponForgingScreenHandle
 
     private void renderProgressArrow(DrawContext context, int x, int y) {
         if (handler.isCrafting()) {
-            context.drawTexture(ARROW_TEXTURE, x + 73, y + 35, 0, 0,
-                    handler.getScaledArrowProgress(), 17, 24, 17);
+            context.drawTexture(ARROW_TEXTURE, x + 115, y + 34, 0, 0,
+                    handler.getScaledArrowProgress(), 17, 22, 17);
         }
     }
 

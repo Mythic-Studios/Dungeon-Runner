@@ -14,7 +14,7 @@ public class DungeonConfig implements ConfigData {
 
     @ConfigEntry.Category("general_settings")
     @ConfigEntry.Gui.Tooltip(count = 2)
-    public static boolean showBarsInCreative = false;
+    public static boolean showBarsInCreative = true;
 
     @ConfigEntry.Category("gui_settings")
     @ConfigEntry.Gui.Tooltip(count = 2)

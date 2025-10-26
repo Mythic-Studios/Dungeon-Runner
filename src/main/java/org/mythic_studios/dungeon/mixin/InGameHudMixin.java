@@ -4,6 +4,7 @@ import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.hud.InGameHud;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.render.RenderTickCounter;
+import net.minecraft.entity.JumpingMount;
 import net.minecraft.entity.player.PlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -43,6 +44,18 @@ public class InGameHudMixin {
     // Cancel rendering of experience bar
     @Inject(method = "renderArmor", at = @At("HEAD"), cancellable = true)
     private static void hideArmorBar(DrawContext context, PlayerEntity player, int i, int j, int k, int x, CallbackInfo ci) {
+        ci.cancel();
+    }
+
+    // Cancel rendering of experience bar
+    @Inject(method = "renderMountHealth", at = @At("HEAD"), cancellable = true)
+    private void hideMountHealth(DrawContext context, CallbackInfo ci) {
+        ci.cancel();
+    }
+
+    // Cancel rendering of experience bar
+    @Inject(method = "renderMountJumpBar", at = @At("HEAD"), cancellable = true)
+    private void hideMountJumpBar(JumpingMount mount, DrawContext context, int x, CallbackInfo ci) {
         ci.cancel();
     }
 }

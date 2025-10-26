@@ -16,6 +16,12 @@
   "item.dungeon.crystals.sun_crystal": "Charged Crystal (Burning)",
   "item.dungeon.crystals.blood_crystal": "Charged Crystal (Bleeding)",
 
+  "item.dungeon.frost.frost_blade_common": "Frost Blade (§7Common§r)",
+  "item.dungeon.frost.frost_blade_uncommon": "Frost Blade (§2Uncommon§r)",
+  "item.dungeon.frost.frost_blade_rare": "Frost Blade (§1Rare§r)",
+  "item.dungeon.frost.frost_blade_epic": "Frost Blade (§5Epic§r)",
+  "item.dungeon.frost.frost_blade_legendary": "Frost Blade (§6Legendary§r)",
+  "item.dungeon.frost.frost_blade_mythical": "Frost Blade (§dMythical§r)",
 
   "item.dungeon.poison_tipped.poison_tipped_blade_common": "Poison Tipped Blade (§7Common§r)",
   "item.dungeon.poison_tipped.poison_tipped_blade_uncommon": "Poison Tipped Blade (§2Uncommon§r)",
@@ -31,6 +37,10 @@
   "item.dungeon.weapon_core.weapon_core_epic": "Weapon Core (Powered)",
   "item.dungeon.weapon_core.weapon_core_legendary": "Weapon Core (Powered)",
   "item.dungeon.weapon_core.weapon_core_mythical": "Weapon Core (Powered)",
+
+  "itemgroup.weapons": "Dungeon Runner: Weapons",
+  "itemgroup.materials_equipment": "Dungeon Runner: Materials",
+  "itemgroup.dungeon_blocks": "Dungeon Runner: Blocks",
 
   "reward.common": "You rolled a §7Common",
   "reward.uncommon": "You rolled a §2Uncommon",
@@ -51,6 +61,9 @@
 
   "tooltip.poison_ability.1": "\"§o§eRight-Click§r\" §6to activate a 10 Block burst of Poison that",
   "tooltip.poison_ability.2": "§6lasts a duration amount of time that WILL go on a cooldown",
+
+  "tooltip.frost_ability.1": "\"§o§eOn-Hit:§r\" §6Enemies will freeze still",
+  "tooltip.frost_ability.2": "§6until a certain time unless immune",
 
   "tooltip.duration.20": "Effect Duration: 1 sec",
   "tooltip.duration.40": "Effect Duration: 2 secs",
@@ -75,7 +88,7 @@
 
   "text.autoconfig.dungeon.option.showBarsInCreative": "Show Bars in Creative",
   "text.autoconfig.dungeon.option.showBarsInCreative.@Tooltip[0]": "Shows the custom health bar, xp bar, dash bar while in Creative Mode",
-  "text.autoconfig.dungeon.option.showBarsInCreative.@Tooltip[1]": "Default: No",
+  "text.autoconfig.dungeon.option.showBarsInCreative.@Tooltip[1]": "Default: Yes",
 
   "text.autoconfig.dungeon.category.gui_settings": "Gui Settings",
   "text.autoconfig.dungeon.option.isLifesOnLeft": "Is Lifes on the Left Side of the Screen?",

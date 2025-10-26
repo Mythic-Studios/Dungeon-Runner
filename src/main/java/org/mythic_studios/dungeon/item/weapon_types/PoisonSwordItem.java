@@ -1,4 +1,4 @@
-package org.mythic_studios.dungeon.item;
+package org.mythic_studios.dungeon.item.weapon_types;
 
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.LivingEntity;
