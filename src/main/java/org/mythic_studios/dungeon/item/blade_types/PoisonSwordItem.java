@@ -1,4 +1,4 @@
-package org.mythic_studios.dungeon.item.weapon_types;
+package org.mythic_studios.dungeon.item.blade_types;
 
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.LivingEntity;
@@ -117,8 +117,8 @@ public class PoisonSwordItem extends SwordItem {
         }
 
         tooltip.add(Text.literal(" "));
-        tooltip.add(Text.translatable("tooltip.poison_ability.1"));
-        tooltip.add(Text.translatable("tooltip.poison_ability.2"));
+        tooltip.add(Text.translatable("tooltip.poison_ability_blade.1"));
+        tooltip.add(Text.translatable("tooltip.poison_ability_blade.2"));
 
 
         super.appendTooltip(stack, context, tooltip, type);

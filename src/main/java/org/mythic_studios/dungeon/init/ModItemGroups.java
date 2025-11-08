@@ -8,8 +8,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.mythic_studios.dungeon.DungeonRunner;
-import org.mythic_studios.dungeon.init.weapon_types.ModFrostSwordItems;
-import org.mythic_studios.dungeon.init.weapon_types.ModPoisonSwordItems;
+import org.mythic_studios.dungeon.init.bow_types.ModBowFlamingItems;
+import org.mythic_studios.dungeon.init.sword_types.ModFrostSwordItems;
+import org.mythic_studios.dungeon.init.sword_types.ModPoisonSwordItems;
 
 public class ModItemGroups {
 
@@ -39,14 +40,24 @@ public class ModItemGroups {
                             entries.add(ModFrostSwordItems.FROST_BLADE_LEGENDARY);
                             entries.add(ModFrostSwordItems.FROST_BLADE_MYTHICAL);
 
+                            entries.add(ModBowFlamingItems.BOW_FLAMING_COMMON);
+                            entries.add(ModBowFlamingItems.BOW_FLAMING_UNCOMMON);
+                            entries.add(ModBowFlamingItems.BOW_FLAMING_RARE);
+                            entries.add(ModBowFlamingItems.BOW_FLAMING_EPIC);
+                            entries.add(ModBowFlamingItems.BOW_FLAMING_LEGENDARY);
+                            entries.add(ModBowFlamingItems.BOW_FLAMING_MYTHICAL);
+
                         }).build());
 
         MATERIALS_EQUIPMENT = Registry.register(Registries.ITEM_GROUP,
                 Identifier.of(DungeonRunner.MOD_ID, "materials_equipment"),
                 FabricItemGroup.builder().displayName(Text.translatable("itemgroup.materials_equipment"))
-                        .icon(() -> new ItemStack(ModItems.BLADE_MOLD)).entries((displayContext, entries) -> {
+                        .icon(() -> new ItemStack(ModItems.EMPTY_MOLD)).entries((displayContext, entries) -> {
 
+                            entries.add(ModItems.EMPTY_MOLD);
                             entries.add(ModItems.BLADE_MOLD);
+                            entries.add(ModItems.BOW_MOLD);
+
                             entries.add(ModItems.CRYSTAL_POISON);
                             entries.add(ModItems.CRYSTAL_FREEZING);
                             entries.add(ModItems.CRYSTAL_SUN);
@@ -56,6 +67,10 @@ public class ModItemGroups {
 
                             entries.add(ModItems.WEAPON_CORE_UNKNOWN);
 
+                            entries.add(ModItems.CHARCOAL_PIECE);
+                            entries.add(ModSketches.SWORD_SKETCH);
+                            entries.add(ModSketches.BOW_SKETCH);
+                            entries.add(ModSketches.HAMMER_SKETCH);
                         }).build());
 
         DUNGEON_BLOCKS = Registry.register(Registries.ITEM_GROUP,

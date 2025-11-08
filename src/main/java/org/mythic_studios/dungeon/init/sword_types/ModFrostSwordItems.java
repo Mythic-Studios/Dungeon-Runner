@@ -1,4 +1,4 @@
-package org.mythic_studios.dungeon.init.weapon_types;
+package org.mythic_studios.dungeon.init.sword_types;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
@@ -7,7 +7,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.mythic_studios.dungeon.DungeonRunner;
 import org.mythic_studios.dungeon.item.ModToolMaterials;
-import org.mythic_studios.dungeon.item.weapon_types.FrostBladeItem;
+import org.mythic_studios.dungeon.item.blade_types.FrostBladeItem;
 
 public class ModFrostSwordItems {
 

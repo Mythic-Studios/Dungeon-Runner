@@ -7,7 +7,6 @@ import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import org.mythic_studios.dungeon.init.ModBlocks;
 import org.mythic_studios.dungeon.init.ModItems;
-import org.mythic_studios.dungeon.init.weapon_types.ModPoisonSwordItems;
 
 public class ModModelGenerator extends FabricModelProvider {
     public ModModelGenerator(FabricDataOutput output) {
@@ -27,6 +26,8 @@ public class ModModelGenerator extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SECRET_DUNGEON_KEY, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BLADE_MOLD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EMPTY_MOLD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BOW_MOLD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CRYSTAL_POISON, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRYSTAL_FREEZING, Models.GENERATED);

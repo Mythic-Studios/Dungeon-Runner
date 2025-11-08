@@ -9,7 +9,11 @@
 
   "item.dungeon.dungeon_key": "Dungeon Key",
   "item.dungeon.secret_dungeon_key": "Special Dungeon Key",
+  "item.dungeon.blank_mold": "Weapon Mold (Blank)",
   "item.dungeon.blade_mold": "Weapon Mold (Blade)",
+  "item.dungeon.bow_mold": "Weapon Mold (Bow)",
+
+  "item.dungeon.charcoal_piece": "Charcoal Piece",
 
   "item.dungeon.crystals.poisoned_crystal": "Charged Crystal (Poisoning)",
   "item.dungeon.crystals.frozen_crystal": "Charged Crystal (Freezing)",
@@ -30,6 +34,17 @@
   "item.dungeon.poison_tipped.poison_tipped_blade_legendary": "Poison Tipped Blade (§6Legendary§r)",
   "item.dungeon.poison_tipped.poison_tipped_blade_mythical": "Poison Tipped Blade (§dMythical§r)",
 
+  "item.dungeon.bow_flaming.bow_flaming_common": "Bow of Flames (§7Common§r)",
+  "item.dungeon.bow_flaming.bow_flaming_uncommon": "Bow of Flames (§2Uncommon§r)",
+  "item.dungeon.bow_flaming.bow_flaming_rare": "Bow of Flames (§1Rare§r)",
+  "item.dungeon.bow_flaming.bow_flaming_epic": "Bow of Flames (§5Epic§r)",
+  "item.dungeon.bow_flaming.bow_flaming_legendary": "Bow of Flames (§6Legendary§r)",
+  "item.dungeon.bow_flaming.bow_flaming_mythical": "Bow of Flames (§dMythical§r)",
+
+  "item.dungeon.blade_sketch": "Sketched Paper (Blade)",
+  "item.dungeon.bow_sketch": "Sketched Paper (Bow)",
+  "item.dungeon.hammer_sketch": "Sketched Paper (Hammer)",
+
   "item.dungeon.weapon_core.weapon_core_unknown": "Weapon Core (Unpowered)",
   "item.dungeon.weapon_core.weapon_core_common": "Weapon Core (Powered)",
   "item.dungeon.weapon_core.weapon_core_uncommon": "Weapon Core (Powered)",
@@ -41,6 +56,8 @@
   "itemgroup.weapons": "Dungeon Runner: Weapons",
   "itemgroup.materials_equipment": "Dungeon Runner: Materials",
   "itemgroup.dungeon_blocks": "Dungeon Runner: Blocks",
+
+  "reward.blank": "You sketched a ",
 
   "reward.common": "You rolled a §7Common",
   "reward.uncommon": "You rolled a §2Uncommon",
@@ -58,12 +75,23 @@
 
   "tooltip.power_item": "\"§o§eRight-Click§r\" to power Item",
   "tooltip.shift.ability": "Hold \"§o§eShift§r\" to see Weapon Stats",
+  "tooltip.shift": "Hold \"§o§eShift§r\" to see Item Details",
 
-  "tooltip.poison_ability.1": "\"§o§eRight-Click§r\" §6to activate a 10 Block burst of Poison that",
-  "tooltip.poison_ability.2": "§6lasts a duration amount of time that WILL go on a cooldown",
+  "tooltip.poison_ability_blade.1": "\"§o§eRight-Click§r\" §6to activate a 10 Block burst of Poison that",
+  "tooltip.poison_ability_blade.2": "§6lasts a duration amount of time that WILL go on a cooldown",
 
   "tooltip.frost_ability.1": "\"§o§eOn-Hit:§r\" §6Enemies will freeze still",
   "tooltip.frost_ability.2": "§6until a certain time unless immune",
+
+  "tooltip.burning_bow.1": "\"§o§eOn Arrow Collision:§r\" §6Sets any mob or player aflame ",
+  "tooltip.burning_bow.2": "§6for the effect duration set",
+
+  "tooltip.duration.20.2": "Effect Duration: 2 sec",
+  "tooltip.duration.40.2": "Effect Duration: 4 secs",
+  "tooltip.duration.60.2": "Effect Duration: 6 sec",
+  "tooltip.duration.80.2": "Effect Duration: 8 secs",
+  "tooltip.duration.100.2": "Effect Duration: 10 sec",
+  "tooltip.duration.140.2": "Effect Duration: 14 secs",
 
   "tooltip.duration.20": "Effect Duration: 1 sec",
   "tooltip.duration.40": "Effect Duration: 2 secs",
@@ -79,6 +107,13 @@
   "tooltip.cooldown.120": "Ability Cooldown: 7 secs",
   "tooltip.cooldown.80": "Ability Cooldown: 4 sec",
   "tooltip.cooldown.160": "Ability Cooldown: 9 secs",
+
+  "tooltip.no_sketch": "§eThis item cannot be sketched on again",
+
+  "tooltip.weapon_exist.false": "§6The weapon sketched doesn't exist yet",
+  "tooltip.sketch.blade": "§6The weapon sketched seems to look like a sword",
+  "tooltip.sketch.bow": "§6The weapon sketched seems to look like a backwards bow",
+  "tooltip.sketch.hammer": "§6The weapon sketched seems to be shaped after the mace",
 
   "text.autoconfig.dungeon.title": "Dungeon Runner Config",
   "text.autoconfig.dungeon.category.general_settings": "General Settings",

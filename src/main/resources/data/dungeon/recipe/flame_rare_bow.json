@@ -1,0 +1,7 @@
+{
+  "type": "dungeon:weapon_forging",
+  "ingredient1": { "item": "dungeon:bow_mold" },
+  "ingredient2": { "item": "dungeon:weapon_core/weapon_core_rare" },
+  "ingredient3": { "item": "dungeon:crystals/sun_crystal" },
+  "result": { "item": "dungeon:bow_flaming/bow_flaming_rare", "count": 1 }
+}

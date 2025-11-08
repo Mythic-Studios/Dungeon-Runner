@@ -1,4 +1,4 @@
-package org.mythic_studios.dungeon.item.weapon_types;
+package org.mythic_studios.dungeon.item.blade_types;
 
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.LivingEntity;
@@ -68,19 +68,19 @@ public class FrostBladeItem extends SwordItem {
 
         if (Screen.hasShiftDown()) {
             if (StatusEffectLength == 20) {
-                tooltip.add(Text.translatable("tooltip.duration.20"));
+                tooltip.add(Text.translatable("tooltip.duration.20.2"));
             } else if (StatusEffectLength == 40) {
-                tooltip.add(Text.translatable("tooltip.duration.40"));
+                tooltip.add(Text.translatable("tooltip.duration.40.2"));
             } else if (StatusEffectLength == 60) {
-                tooltip.add(Text.translatable("tooltip.duration.60"));
+                tooltip.add(Text.translatable("tooltip.duration.60.2"));
             } else if (StatusEffectLength == 80) {
-                tooltip.add(Text.translatable("tooltip.duration.80"));
+                tooltip.add(Text.translatable("tooltip.duration.80.2"));
             } else if (StatusEffectLength == 100) {
-                tooltip.add(Text.translatable("tooltip.duration.100"));
+                tooltip.add(Text.translatable("tooltip.duration.100.2"));
             } else if (StatusEffectLength == 120) {
-                tooltip.add(Text.translatable("tooltip.duration.120"));
+                tooltip.add(Text.translatable("tooltip.duration.120.2"));
             } else if (StatusEffectLength == 140) {
-                tooltip.add(Text.translatable("tooltip.duration.140"));
+                tooltip.add(Text.translatable("tooltip.duration.140.2"));
             }
         }
         else {

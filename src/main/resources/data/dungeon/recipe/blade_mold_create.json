@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "charcoal_breaking",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dungeon:blade_sketch"
+    },
+    {
+      "item": "dungeon:blank_mold"
+    }
+  ],
+  "result": {
+    "id": "dungeon:blade_mold",
+    "count": 1
+  }
+}

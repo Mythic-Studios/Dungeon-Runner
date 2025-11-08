@@ -29,7 +29,7 @@ public class UnpoweredWeaponCoreItem extends Item {
 
         if (!world.isClient()) {
             // Generate a random number from 0 to 99
-            int roll = world.random.nextInt(100);
+            int roll = world.random.nextInt(101);
             Item result = null;
             String rarity = "";
 

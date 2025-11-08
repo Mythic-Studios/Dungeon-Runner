@@ -5,6 +5,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.mythic_studios.dungeon.DungeonRunner;
+import org.mythic_studios.dungeon.item.CharcoalPieceItem;
 import org.mythic_studios.dungeon.item.DungeonKeyItem;
 import org.mythic_studios.dungeon.item.UnpoweredWeaponCoreItem;
 import org.mythic_studios.dungeon.item.WeaponCoreItem;
@@ -22,7 +23,11 @@ public class ModItems {
     public static Item DUNGEON_KEY;
     public static Item SECRET_DUNGEON_KEY;
 
+    public static Item EMPTY_MOLD;
     public static Item BLADE_MOLD;
+    public static Item BOW_MOLD;
+
+    public static Item CHARCOAL_PIECE;
 
     public static Item CRYSTAL_POISON;
     public static Item CRYSTAL_FREEZING;
@@ -42,11 +47,15 @@ public class ModItems {
         DUNGEON_KEY = createItem("dungeon_key", new DungeonKeyItem(new Item.Settings(), ModBlocks.DUNGEON_KEY_BRICKS, ModBlocks.DUNGEON_BRICKS));
         SECRET_DUNGEON_KEY = createItem("secret_dungeon_key", new DungeonKeyItem(new Item.Settings(), ModBlocks.SECRET_DUNGEON_KEY_BRICKS, ModBlocks.DUNGEON_BRICKS));
 
+        EMPTY_MOLD = createItem("blank_mold", new Item(new Item.Settings()));
         BLADE_MOLD = createItem("blade_mold", new Item(new Item.Settings()));
+        BOW_MOLD = createItem("bow_mold", new Item(new Item.Settings()));
 
         CRYSTAL_POISON = createItem("crystals/poisoned_crystal", new Item(new Item.Settings()));
         CRYSTAL_FREEZING = createItem("crystals/frozen_crystal", new Item(new Item.Settings()));
         CRYSTAL_SUN = createItem("crystals/sun_crystal", new Item(new Item.Settings()));
+
+        CHARCOAL_PIECE = createItem("charcoal_piece", new CharcoalPieceItem(new Item.Settings().maxDamage(10)));
     }
 
 

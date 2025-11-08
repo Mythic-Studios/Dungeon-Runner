@@ -1,0 +1,6 @@
+{
+  "parent": "dungeon:item/bow_flaming/bow_flaming_uncommon",
+  "textures": {
+    "layer0": "dungeon:item/bow_flaming/bow_flames_pulling_1"
+  }
+}
