@@ -1,6 +1,9 @@
 package org.mythic_studios.dungeon.init;
 
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -26,12 +29,15 @@ public class ModItems {
     public static Item EMPTY_MOLD;
     public static Item BLADE_MOLD;
     public static Item BOW_MOLD;
+    public static Item HAMMER_MOLD;
 
     public static Item CHARCOAL_PIECE;
 
     public static Item CRYSTAL_POISON;
     public static Item CRYSTAL_FREEZING;
     public static Item CRYSTAL_SUN;
+
+    public static Item MANTIS_SPAWN_EGG;
 
     public static void init() {
 
@@ -50,12 +56,15 @@ public class ModItems {
         EMPTY_MOLD = createItem("blank_mold", new Item(new Item.Settings()));
         BLADE_MOLD = createItem("blade_mold", new Item(new Item.Settings()));
         BOW_MOLD = createItem("bow_mold", new Item(new Item.Settings()));
+        HAMMER_MOLD = createItem("hammer_mold", new Item(new Item.Settings()));
 
         CRYSTAL_POISON = createItem("crystals/poisoned_crystal", new Item(new Item.Settings()));
         CRYSTAL_FREEZING = createItem("crystals/frozen_crystal", new Item(new Item.Settings()));
         CRYSTAL_SUN = createItem("crystals/sun_crystal", new Item(new Item.Settings()));
 
         CHARCOAL_PIECE = createItem("charcoal_piece", new CharcoalPieceItem(new Item.Settings().maxDamage(10)));
+
+        MANTIS_SPAWN_EGG = createItem("mantis_spawn_egg", new SpawnEggItem(ModEntities.MANTIS, 0x9dc783, 0xbfaf5f, new Item.Settings()));
     }
 
 

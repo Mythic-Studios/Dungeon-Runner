@@ -9,6 +9,9 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.mythic_studios.dungeon.DungeonRunner;
+import org.mythic_studios.dungeon.block.BatteryBlock;
+import org.mythic_studios.dungeon.block.DungeonLampBlock;
+import org.mythic_studios.dungeon.block.UpgradeStationBlock;
 import org.mythic_studios.dungeon.block.WeaponForgeBlock;
 
 public class ModBlocks {
@@ -24,6 +27,18 @@ public class ModBlocks {
 
     public static final Block WEAPON_FORGE = createBlock("weapon_forge",
             new WeaponForgeBlock(AbstractBlock.Settings.copy(Blocks.FURNACE).hardness(32f)));
+
+    public static final Block DUNGEON_LAMP = createBlock("dungeon_lamp",
+            new DungeonLampBlock(AbstractBlock.Settings.copy(Blocks.REDSTONE_LAMP).hardness(100f).luminance(state -> state.get(DungeonLampBlock.CLICKED) ? 15 : 0)));
+
+    public static final Block UPGRADE_STATION = createBlock("upgrade_station",
+            new UpgradeStationBlock(AbstractBlock.Settings.copy(Blocks.BEDROCK)));
+
+    public static final Block CHARGED_BATTERY = createBlock("battery/charged_battery",
+            new BatteryBlock(AbstractBlock.Settings.copy(Blocks.BEDROCK), true));
+
+    public static final Block UNPOWERED_BATTERY = createBlock("battery/unpowered_battery",
+            new BatteryBlock(AbstractBlock.Settings.copy(Blocks.BEDROCK), false));
 
     private static Block createBlock(String name, Block block) {
         registerBlockItem(name, block);

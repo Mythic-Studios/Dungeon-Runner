@@ -4,14 +4,22 @@
   "block.dungeon.dungeon_key_bricks": "Dungeon Bricks (Key Hole)",
   "block.dungeon.secret_dungeon_key_bricks": "Dungeon Bricks (Special Key Hole)",
   "block.dungeon.weapon_forge": "Weapon Forge",
+  "block.dungeon.dungeon_lamp": "Dungeon Lamp",
+  "block.dungeon.upgrade_station": "Upgrade Station",
+
+  "block.dungeon.battery.charged_battery": "Station Battery (Charged)",
+  "block.dungeon.battery.unpowered_battery": "Station Battery (Depleted)",
 
   "gui.dungeon.weapon_forge": "Weapon Forge",
+
+  "item.dungeon.mantis_spawn_egg": "Spawn Mantis",
 
   "item.dungeon.dungeon_key": "Dungeon Key",
   "item.dungeon.secret_dungeon_key": "Special Dungeon Key",
   "item.dungeon.blank_mold": "Weapon Mold (Blank)",
   "item.dungeon.blade_mold": "Weapon Mold (Blade)",
   "item.dungeon.bow_mold": "Weapon Mold (Bow)",
+  "item.dungeon.hammer_mold": "Weapon Mold (Hammer)",
 
   "item.dungeon.charcoal_piece": "Charcoal Piece",
 
@@ -33,6 +41,13 @@
   "item.dungeon.poison_tipped.poison_tipped_blade_epic": "Poison Tipped Blade (§5Epic§r)",
   "item.dungeon.poison_tipped.poison_tipped_blade_legendary": "Poison Tipped Blade (§6Legendary§r)",
   "item.dungeon.poison_tipped.poison_tipped_blade_mythical": "Poison Tipped Blade (§dMythical§r)",
+
+  "item.dungeon.poison_hammer.poison_hammer_common": "Poisoned Hammer (§7Common§r)",
+  "item.dungeon.poison_hammer.poison_hammer_uncommon": "Poisoned Hammer (§2Uncommon§r)",
+  "item.dungeon.poison_hammer.poison_hammer_rare": "Poisoned Hammer (§1Rare§r)",
+  "item.dungeon.poison_hammer.poison_hammer_epic": "Poisoned Hammer (§5Epic§r)",
+  "item.dungeon.poison_hammer.poison_hammer_legendary": "Poisoned Hammer (§6Legendary§r)",
+  "item.dungeon.poison_hammer.poison_hammer_mythical": "Poisoned Hammer (§dMythical§r)",
 
   "item.dungeon.bow_flaming.bow_flaming_common": "Bow of Flames (§7Common§r)",
   "item.dungeon.bow_flaming.bow_flaming_uncommon": "Bow of Flames (§2Uncommon§r)",
@@ -56,6 +71,9 @@
   "itemgroup.weapons": "Dungeon Runner: Weapons",
   "itemgroup.materials_equipment": "Dungeon Runner: Materials",
   "itemgroup.dungeon_blocks": "Dungeon Runner: Blocks",
+
+  "message.battery.charged": "§6The battery is at a moderate charge",
+  "message.battery.depleted": "§6The battery is depleted",
 
   "reward.blank": "You sketched a ",
 

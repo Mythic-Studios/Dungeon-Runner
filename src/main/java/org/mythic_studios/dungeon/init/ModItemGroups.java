@@ -9,6 +9,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.mythic_studios.dungeon.DungeonRunner;
 import org.mythic_studios.dungeon.init.bow_types.ModBowFlamingItems;
+import org.mythic_studios.dungeon.init.hammer_types.ModPoisonHammerItems;
 import org.mythic_studios.dungeon.init.sword_types.ModFrostSwordItems;
 import org.mythic_studios.dungeon.init.sword_types.ModPoisonSwordItems;
 
@@ -47,6 +48,13 @@ public class ModItemGroups {
                             entries.add(ModBowFlamingItems.BOW_FLAMING_LEGENDARY);
                             entries.add(ModBowFlamingItems.BOW_FLAMING_MYTHICAL);
 
+                            entries.add(ModPoisonHammerItems.POISON_HAMMER_COMMON);
+                            entries.add(ModPoisonHammerItems.POISON_HAMMER_UNCOMMON);
+                            entries.add(ModPoisonHammerItems.POISON_HAMMER_RARE);
+                            entries.add(ModPoisonHammerItems.POISON_HAMMER_EPIC);
+                            entries.add(ModPoisonHammerItems.POISON_HAMMER_LEGENDARY);
+                            entries.add(ModPoisonHammerItems.POISON_HAMMER_MYTHICAL);
+
                         }).build());
 
         MATERIALS_EQUIPMENT = Registry.register(Registries.ITEM_GROUP,
@@ -57,6 +65,7 @@ public class ModItemGroups {
                             entries.add(ModItems.EMPTY_MOLD);
                             entries.add(ModItems.BLADE_MOLD);
                             entries.add(ModItems.BOW_MOLD);
+                            entries.add(ModItems.HAMMER_MOLD);
 
                             entries.add(ModItems.CRYSTAL_POISON);
                             entries.add(ModItems.CRYSTAL_FREEZING);
@@ -71,6 +80,8 @@ public class ModItemGroups {
                             entries.add(ModSketches.SWORD_SKETCH);
                             entries.add(ModSketches.BOW_SKETCH);
                             entries.add(ModSketches.HAMMER_SKETCH);
+
+                            entries.add(ModItems.MANTIS_SPAWN_EGG);
                         }).build());
 
         DUNGEON_BLOCKS = Registry.register(Registries.ITEM_GROUP,
@@ -79,10 +90,14 @@ public class ModItemGroups {
                         .icon(() -> new ItemStack(ModBlocks.WEAPON_FORGE)).entries((displayContext, entries) -> {
 
                             entries.add(ModBlocks.WEAPON_FORGE);
+                            entries.add(ModBlocks.UPGRADE_STATION);
 
                             entries.add(ModBlocks.DUNGEON_BRICKS);
+                            entries.add(ModBlocks.DUNGEON_LAMP);
                             entries.add(ModBlocks.DUNGEON_KEY_BRICKS);
                             entries.add(ModBlocks.SECRET_DUNGEON_KEY_BRICKS);
+
+                            entries.add(ModBlocks.CHARGED_BATTERY);
 
                         }).build());
     }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld_mace",
+  "textures": {
+    "layer0": "dungeon:item/poison_hammer/poison_hammer"
+  }
+}

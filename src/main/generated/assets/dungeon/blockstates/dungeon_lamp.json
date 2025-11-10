@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "dungeon:block/dungeon_lamp"
+    },
+    "clicked=true": {
+      "model": "dungeon:block/dungeon_lamp_on"
+    }
+  }
+}

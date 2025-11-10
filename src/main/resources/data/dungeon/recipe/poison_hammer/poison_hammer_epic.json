@@ -1,0 +1,7 @@
+{
+  "type": "dungeon:weapon_forging",
+  "ingredient1": { "item": "dungeon:hammer_mold" },
+  "ingredient2": { "item": "dungeon:weapon_core/weapon_core_epic" },
+  "ingredient3": { "item": "dungeon:crystals/poisoned_crystal" },
+  "result": { "item": "dungeon:poison_hammer/poison_hammer_epic", "count": 1 }
+}

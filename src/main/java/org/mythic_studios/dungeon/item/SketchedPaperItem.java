@@ -22,17 +22,11 @@ public class SketchedPaperItem extends Item {
         tooltip.add(Text.literal(" "));
 
         if (Screen.hasShiftDown()) {
-            if (Objects.equals(sketchImage, "Blade")) {
-                tooltip.add(Text.translatable("tooltip.sketch.blade"));
-            }
-            else if (Objects.equals(sketchImage, "Bow")) {
-                tooltip.add(Text.translatable("tooltip.sketch.bow"));
-            }
-//            else if (Objects.equals(sketchImage, "Hammer")) {
-//                tooltip.add(Text.translatable("tooltip.sketch.hammer"));
-//            }
-            else {
-                tooltip.add(Text.translatable("tooltip.weapon_exist.false"));
+            switch (sketchImage) {
+                case "Blade" -> tooltip.add(Text.translatable("tooltip.sketch.blade"));
+                case "Bow" -> tooltip.add(Text.translatable("tooltip.sketch.bow"));
+                case "Hammer" -> tooltip.add(Text.translatable("tooltip.sketch.hammer"));
+                case null, default -> tooltip.add(Text.translatable("tooltip.weapon_exist.false"));
             }
         }
         else {
