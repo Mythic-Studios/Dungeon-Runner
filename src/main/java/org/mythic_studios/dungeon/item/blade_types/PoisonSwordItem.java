@@ -51,7 +51,7 @@ public class PoisonSwordItem extends SwordItem {
                     user.getX() + radius, user.getY() + radius, user.getZ() + radius);
 
             List<LivingEntity> entities = world.getEntitiesByClass(LivingEntity.class, area,
-                    entity -> entity != user && entity.isAlive() && user.canSee(entity));
+                    entity -> !(entity instanceof PlayerEntity) && entity.isAlive() && user.canSee(entity));
 
             for (LivingEntity entity : entities) {
                 entity.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, StatusEffectLength, 2));
