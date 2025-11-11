@@ -11,6 +11,7 @@
   "block.dungeon.battery.unpowered_battery": "Station Battery (Depleted)",
 
   "gui.dungeon.weapon_forge": "Weapon Forge",
+  "gui.dungeon.chemist_station": "Chemistry Table",
 
   "item.dungeon.mantis_spawn_egg": "Spawn Mantis",
 
@@ -22,6 +23,8 @@
   "item.dungeon.hammer_mold": "Weapon Mold (Hammer)",
 
   "item.dungeon.charcoal_piece": "Charcoal Piece",
+
+  "item.dungeon.effect_bottles.speed_simple": "Bottle of a Contained Effect (Speed)",
 
   "item.dungeon.crystals.poisoned_crystal": "Charged Crystal (Poisoning)",
   "item.dungeon.crystals.frozen_crystal": "Charged Crystal (Freezing)",
@@ -132,6 +135,14 @@
   "tooltip.sketch.blade": "§6The weapon sketched seems to look like a sword",
   "tooltip.sketch.bow": "§6The weapon sketched seems to look like a backwards bow",
   "tooltip.sketch.hammer": "§6The weapon sketched seems to be shaped after the mace",
+
+  "tooltip.bottle.speed.1": "§6Provides a simple boost of speed that lasts 100 Seconds",
+  "tooltip.bottle.speed.2": "§6Provides a advanced boost of speed that lasts 100 Seconds",
+  "tooltip.bottle.speed.3": "§6Provides a powerful boost of speed that lasts 100 Seconds",
+
+  "tooltip.bottle.health.1": "§6Provides 10 health that lasts 100 Seconds",
+  "tooltip.bottle.health.2": "§6Provides 25 health that lasts 100 Seconds",
+  "tooltip.bottle.health.3": "§6Provides 50 health  that lasts 100 Seconds",
 
   "text.autoconfig.dungeon.title": "Dungeon Runner Config",
   "text.autoconfig.dungeon.category.general_settings": "General Settings",

@@ -21,23 +21,25 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import org.mythic_studios.dungeon.block.WeaponForgeBlock;
 import org.mythic_studios.dungeon.init.ModBlockEntities;
 import org.mythic_studios.dungeon.init.ModRecipes;
-import org.mythic_studios.dungeon.recipe.WeaponForging;
-import org.mythic_studios.dungeon.recipe.WeaponForgingInput;
+import org.mythic_studios.dungeon.recipe.Chemistry;
+import org.mythic_studios.dungeon.recipe.ChemistryInput;
+import org.mythic_studios.dungeon.screen.chemistry.ChemistryTableScreenHandler;
 import org.mythic_studios.dungeon.screen.forging.WeaponForgingScreenHandler;
 
 import java.util.Objects;
 import java.util.Optional;
 
-public class WeaponForgeBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
-    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
+public class ChemistStationBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
+    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(6, ItemStack.EMPTY);
 
     private static final int INPUT_SLOT = 0;
     private static final int INPUT_SLOT_2 = 1;
     private static final int INPUT_SLOT_3 = 2;
-    private static final int OUTPUT_SLOT = 3;
+    private static final int INPUT_SLOT_4 = 3;
+    private static final int INPUT_SLOT_5 = 4;
+    private static final int OUTPUT_SLOT = 5;
 
     private int progress = 0;
     private int maxProgress = 120;
@@ -67,8 +69,8 @@ public class WeaponForgeBlockEntity extends BlockEntity implements ExtendedScree
         }
     };
 
-    public WeaponForgeBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.WEAPON_FORGE_BE, pos, state);
+    public ChemistStationBlockEntity(BlockPos pos, BlockState state) {
+        super(ModBlockEntities.CHEMIST_STATION_BE, pos, state);
     }
 
     @Override
@@ -78,13 +80,13 @@ public class WeaponForgeBlockEntity extends BlockEntity implements ExtendedScree
 
     @Override
     public Text getDisplayName() {
-        return Text.translatable("gui.dungeon.weapon_forge");
+        return Text.translatable("gui.dungeon.chemist_station");
     }
 
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new WeaponForgingScreenHandler(syncId, playerInventory, this, propertyDelegate);
+        return new ChemistryTableScreenHandler(syncId, playerInventory, this, propertyDelegate);
     }
 
     @Override
@@ -96,29 +98,20 @@ public class WeaponForgeBlockEntity extends BlockEntity implements ExtendedScree
     protected void writeNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup registryLookup) {
         super.writeNbt(nbt, registryLookup);
         Inventories.writeNbt(nbt, inventory, registryLookup);
-        nbt.putInt("forging.progress", progress);
-        nbt.putInt("forging.max_progress", maxProgress);
+        nbt.putInt("chemistry.progress", progress);
+        nbt.putInt("chemistry.max_progress", maxProgress);
     }
 
     @Override
     protected void readNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup registryLookup) {
         Inventories.readNbt(nbt, inventory, registryLookup);
-        this.progress = nbt.getInt("forging.progress");
-        this.maxProgress = nbt.getInt("forging.max_progress");
+        this.progress = nbt.getInt("chemistry.progress");
+        this.maxProgress = nbt.getInt("chemistry.max_progress");
         super.readNbt(nbt, registryLookup);
     }
 
     public void tick(World world, BlockPos pos, BlockState state) {
         if (world.isClient) return;
-
-        boolean wasLit = state.get(WeaponForgeBlock.LIT);
-        boolean isLit = this.hasRecipe();
-
-        if (wasLit != isLit) {
-            world.setBlockState(pos, state.with(WeaponForgeBlock.LIT, isLit), 3);
-        }
-
-
 
         if (hasRecipe()) {
             increaseCraftingProgress();
@@ -161,6 +154,8 @@ public class WeaponForgeBlockEntity extends BlockEntity implements ExtendedScree
                 removeStack(INPUT_SLOT, 1);
                 removeStack(INPUT_SLOT_2, 1);
                 removeStack(INPUT_SLOT_3, 1);
+                removeStack(INPUT_SLOT_4, 1);
+                removeStack(INPUT_SLOT_5, 1);
                 setStack(OUTPUT_SLOT, new ItemStack(output.getItem(),
                         getStack(OUTPUT_SLOT).getCount() + output.getCount()));
             }
@@ -169,19 +164,21 @@ public class WeaponForgeBlockEntity extends BlockEntity implements ExtendedScree
 
 
     private boolean hasRecipe() {
-        Optional<RecipeEntry<WeaponForging>> recipe = getCurrentRecipe();
+        Optional<RecipeEntry<Chemistry>> recipe = getCurrentRecipe();
         if (recipe.isEmpty()) return false;
 
         ItemStack output = recipe.get().value().output();
         return canInsertItemIntoOutputSlot(output) && canInsertAmountIntoOutputSlot(output.getCount());
     }
 
-    public Optional<RecipeEntry<WeaponForging>> getCurrentRecipe() {
+    public Optional<RecipeEntry<Chemistry>> getCurrentRecipe() {
         return Objects.requireNonNull(this.getWorld()).getRecipeManager()
-                .getFirstMatch(ModRecipes.WEAPON_FORGING_TYPE, new WeaponForgingInput(
+                .getFirstMatch(ModRecipes.CHEMISTRY_TYPE, new ChemistryInput(
                         inventory.get(0),
                         inventory.get(1),
-                        inventory.get(2)
+                        inventory.get(2),
+                        inventory.get(3),
+                        inventory.get(4)
                 ), this.getWorld());
     }
 

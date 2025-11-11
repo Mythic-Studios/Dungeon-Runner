@@ -1,4 +1,4 @@
-package org.mythic_studios.dungeon.screen;
+package org.mythic_studios.dungeon.screen.forging;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.gui.DrawContext;

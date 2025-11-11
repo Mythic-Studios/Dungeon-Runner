@@ -1,4 +1,4 @@
-package org.mythic_studios.dungeon.screen;
+package org.mythic_studios.dungeon.screen.forging;
 
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;

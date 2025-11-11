@@ -12,7 +12,8 @@ import org.mythic_studios.dungeon.gui.lives.LivesHudRenderer;
 import org.mythic_studios.dungeon.gui.xp.XpHudRenderer;
 import org.mythic_studios.dungeon.init.ModEntities;
 import org.mythic_studios.dungeon.init.ModScreenHandlers;
-import org.mythic_studios.dungeon.screen.WeaponForgingScreen;
+import org.mythic_studios.dungeon.screen.chemistry.ChemistryTableScreen;
+import org.mythic_studios.dungeon.screen.forging.WeaponForgingScreen;
 import org.mythic_studios.dungeon.util.ModModelPredicates;
 
 public class DungeonRunnerClient implements ClientModInitializer {
@@ -24,6 +25,7 @@ public class DungeonRunnerClient implements ClientModInitializer {
         HudRenderCallback.EVENT.register(new XpHudRenderer());
 
         HandledScreens.register(ModScreenHandlers.WEAPON_FORGING_SCREEN_HANDLER, WeaponForgingScreen::new);
+        HandledScreens.register(ModScreenHandlers.CHEMISTRY_TABLE_SCREEN_HANDLER, ChemistryTableScreen::new);
 
         ModModelPredicates.registerModelPredicates();
 

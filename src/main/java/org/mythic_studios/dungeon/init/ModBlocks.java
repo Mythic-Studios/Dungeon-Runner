@@ -9,10 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.mythic_studios.dungeon.DungeonRunner;
-import org.mythic_studios.dungeon.block.BatteryBlock;
-import org.mythic_studios.dungeon.block.DungeonLampBlock;
-import org.mythic_studios.dungeon.block.UpgradeStationBlock;
-import org.mythic_studios.dungeon.block.WeaponForgeBlock;
+import org.mythic_studios.dungeon.block.*;
 
 public class ModBlocks {
 
@@ -39,6 +36,9 @@ public class ModBlocks {
 
     public static final Block UNPOWERED_BATTERY = createBlock("battery/unpowered_battery",
             new BatteryBlock(AbstractBlock.Settings.copy(Blocks.BEDROCK), false));
+
+    public static final Block CHEMIST_STATION = createBlock("chemist_station",
+            new ChemistStationBlock(AbstractBlock.Settings.copy(Blocks.CRAFTING_TABLE).hardness(32f)));
 
     private static Block createBlock(String name, Block block) {
         registerBlockItem(name, block);
