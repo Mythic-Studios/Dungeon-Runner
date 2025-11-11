@@ -34,6 +34,7 @@ public class DungeonRunner implements ModInitializer {
 		ModItemGroups.init();
 		ModScreenHandlers.registerScreenHandlers();
 		ModBlockEntities.registerBlockEntities();
+		ModBottles.init();
 
 		ServerLivingEntityEvents.AFTER_DEATH.register((entity, damageSource) -> {
 			if (entity instanceof PlayerEntity player && !player.getWorld().isClient()) {

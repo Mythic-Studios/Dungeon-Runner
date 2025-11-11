@@ -26,8 +26,8 @@ public class ChemistryTableScreen extends HandledScreen<ChemistryTableScreenHand
     protected void init() {
         super.init();
 
-        titleY = 5;
-        playerInventoryTitleY = 72;
+        titleY = 3;
+        playerInventoryTitleY = 75;
     }
 
     @Override

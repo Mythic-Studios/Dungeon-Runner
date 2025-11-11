@@ -18,9 +18,22 @@ public class ModItemGroups {
     public static ItemGroup WEAPONS;
     public static ItemGroup MATERIALS_EQUIPMENT;
     public static ItemGroup DUNGEON_BLOCKS;
+    public static ItemGroup DRINKS;
 
 
     public static void init() {
+
+        DRINKS = Registry.register(Registries.ITEM_GROUP,
+                Identifier.of(DungeonRunner.MOD_ID, "drinks"),
+                FabricItemGroup.builder().displayName(Text.translatable("itemgroup.drinks"))
+                        .icon(() -> new ItemStack(ModBottles.BOTTLE_WATER)).entries((displayContext, entries) -> {
+
+                            entries.add(ModBottles.BOTTLE_WATER);
+                            entries.add(ModBottles.BOTTLE_SPEED_SIMPLE);
+                            entries.add(ModBottles.BOTTLE_SPEED_ADVANCED);
+                            entries.add(ModBottles.BOTTLE_SPEED_POWERFUL);
+
+                        }).build());
 
         WEAPONS = Registry.register(Registries.ITEM_GROUP,
                 Identifier.of(DungeonRunner.MOD_ID, "weapons"),

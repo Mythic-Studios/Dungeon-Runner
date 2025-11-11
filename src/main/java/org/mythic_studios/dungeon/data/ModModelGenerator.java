@@ -6,6 +6,7 @@ import net.minecraft.data.client.*;
 import net.minecraft.util.Identifier;
 import org.mythic_studios.dungeon.block.DungeonLampBlock;
 import org.mythic_studios.dungeon.init.ModBlocks;
+import org.mythic_studios.dungeon.init.ModBottles;
 import org.mythic_studios.dungeon.init.ModItems;
 
 import java.util.Optional;
@@ -23,6 +24,8 @@ public class ModModelGenerator extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHARGED_BATTERY);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.UNPOWERED_BATTERY);
+
+        blockStateModelGenerator.registerGeneric(ModBlocks.CHEMIST_STATION);
 
         Identifier lampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.DUNGEON_LAMP, blockStateModelGenerator.modelCollector);
         Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.DUNGEON_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
@@ -54,5 +57,10 @@ public class ModModelGenerator extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.MANTIS_SPAWN_EGG,
                 new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
+
+        itemModelGenerator.register(ModBottles.BOTTLE_WATER, Models.GENERATED);
+        itemModelGenerator.register(ModBottles.BOTTLE_SPEED_SIMPLE, Models.GENERATED);
+        itemModelGenerator.register(ModBottles.BOTTLE_SPEED_ADVANCED, Models.GENERATED);
+        itemModelGenerator.register(ModBottles.BOTTLE_SPEED_POWERFUL, Models.GENERATED);
     }
 }

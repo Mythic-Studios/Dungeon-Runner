@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "dungeon:item/effect_bottles/speed_advanced"
+  }
+}

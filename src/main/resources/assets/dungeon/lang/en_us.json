@@ -6,6 +6,7 @@
   "block.dungeon.weapon_forge": "Weapon Forge",
   "block.dungeon.dungeon_lamp": "Dungeon Lamp",
   "block.dungeon.upgrade_station": "Upgrade Station",
+  "block.dungeon.chemist_station": "Chemist Station",
 
   "block.dungeon.battery.charged_battery": "Station Battery (Charged)",
   "block.dungeon.battery.unpowered_battery": "Station Battery (Depleted)",
@@ -24,7 +25,10 @@
 
   "item.dungeon.charcoal_piece": "Charcoal Piece",
 
+  "item.dungeon.effect_bottles.water_bottle": "Bottle of Water",
   "item.dungeon.effect_bottles.speed_simple": "Bottle of a Contained Effect (Speed)",
+  "item.dungeon.effect_bottles.speed_advanced": "Bottle of a Contained Effect (Speed)",
+  "item.dungeon.effect_bottles.speed_powerful": "Bottle of a Contained Effect (Speed)",
 
   "item.dungeon.crystals.poisoned_crystal": "Charged Crystal (Poisoning)",
   "item.dungeon.crystals.frozen_crystal": "Charged Crystal (Freezing)",
@@ -74,6 +78,7 @@
   "itemgroup.weapons": "Dungeon Runner: Weapons",
   "itemgroup.materials_equipment": "Dungeon Runner: Materials",
   "itemgroup.dungeon_blocks": "Dungeon Runner: Blocks",
+  "itemgroup.drinks": "Dungeon Runner: Effect Drinks",
 
   "message.battery.charged": "§6The battery is at a moderate charge",
   "message.battery.depleted": "§6The battery is depleted",

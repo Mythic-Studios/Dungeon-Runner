@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "dungeon:block/chemist_station"
+    }
+  }
+}
